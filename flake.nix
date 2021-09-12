@@ -7,7 +7,10 @@
     master.url = "github:NixOS/nixpkgs?ref=master";
     agenix.url = "github:ryantm/agenix";
     devshell.url = "github:numtide/devshell";
-    sops-nix.url = "github:Mic92/sops-nix";
+    sops-nix = {
+      url = "github:Mic92/sops-nix";
+      inputs.nixpkgs.follows = "unstable";
+    };
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "unstable";
