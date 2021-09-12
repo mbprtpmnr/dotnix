@@ -27,6 +27,10 @@
 
   swapDevices = [ ];
 
+  boot.cleanTmpDir = true;
+
+  services.journald.extraConfig = "Storage=volatile";
+
   powerManagement.cpuFreqGovernor = lib.mkDefault "ondemand";
   hardware.cpu.intel.updateMicrocode = true;
 

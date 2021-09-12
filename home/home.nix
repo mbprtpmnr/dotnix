@@ -7,6 +7,7 @@
     ./modules/neovim.nix
     ./modules/tmux.nix
     ./modules/programs.nix
+    ./modules/media.nix
     ./modules/files.nix
     ./modules/bash.nix
     ./modules/gtk.nix
