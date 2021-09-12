@@ -7,6 +7,7 @@
     master.url = "github:NixOS/nixpkgs?ref=master";
     agenix.url = "github:ryantm/agenix";
     devshell.url = "github:numtide/devshell";
+    sops-nix.url = "github:Mic92/sops-nix";
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "unstable";
@@ -50,6 +51,7 @@
       hostDefaults.modules = [
         inputs.agenix.nixosModules.age
         inputs.home-manager.nixosModule
+        inputs.sops-nix.nixosModules.sops
       ];
   
       # Overlays builder from channels
