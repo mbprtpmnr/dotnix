@@ -13,6 +13,7 @@
     exa
     fup-repl
     kotatogram-desktop
+    meld
     gimp
     i3lock-fancy
     i3lock-color

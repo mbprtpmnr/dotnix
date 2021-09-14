@@ -5,6 +5,11 @@ let
 in
 
 {
+  home.packages = with pkgs; [
+    playerctl
+    pulsemixer
+  ];
+
   programs = {
     mpv = {
       enable = true;
