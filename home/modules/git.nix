@@ -10,11 +10,12 @@
       key = "A5470073";
     };
     extraConfig = {
+      init.defaultBranch = "master";
       core.editor = "vim";
       github.username = "mbprtpmnr";
-      color.ui = true;
       pull.rebase = true;
       diff.algorithm = "patience";
+      color.ui = true;
     };
   };
 }

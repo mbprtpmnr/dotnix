@@ -53,7 +53,12 @@
       # Host defaults modules
       hostDefaults.modules = [
         inputs.agenix.nixosModules.age
-        inputs.home-manager.nixosModule
+        inputs.home-manager.nixosModule {
+          home-manager = {
+            extraSpecialArgs = { inherit inputs self; };
+            useGlobalPkgs = true;
+          };
+        }
         inputs.sops-nix.nixosModules.sops
       ];
   

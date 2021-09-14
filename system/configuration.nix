@@ -71,6 +71,7 @@
     uid = 1000;
     description = "mbprtpmnr";
     group = "mbprtpmnr";
+    shell = pkgs.zsh;
   };
 
   users.groups.mbprtpmnr = {

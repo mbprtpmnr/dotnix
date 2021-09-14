@@ -15,6 +15,9 @@
     gnumake
     htop
     inputs.npgh.defaultPackage.x86_64-linux
+    pavucontrol
+    xfce.thunar-archive-plugin
+    xfce.xfce4-pulseaudio-plugin
     keepassxc
     kora-icon-theme
     nixpkgs-fmt
