@@ -5,6 +5,10 @@
     stable.url = "github:NixOS/nixpkgs?ref=nixos-21.05";
     unstable.url = "github:NixOS/nixpkgs?ref=nixos-unstable";
     master.url = "github:NixOS/nixpkgs?ref=master";
+    nix = {
+      url = "github:NixOS/nix";
+      inputs.nixpkgs.follows = "unstable";
+    };
     agenix.url = "github:ryantm/agenix";
     devshell.url = "github:numtide/devshell";
     sops-nix = {

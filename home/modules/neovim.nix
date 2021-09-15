@@ -2,7 +2,8 @@
 
 let
   vim-horizon = pkgs.vimUtils.buildVimPlugin {
-    name = "vim-horizon";
+    pname = "vim-horizon";
+    version = "vh";
     src = inputs.vim-horizon;
   };
 in
@@ -12,18 +13,13 @@ in
     enable = true;
     vimAlias = true;
     viAlias = true;
-    # plugins = [
-    #   pkgs.vimPlugins.onedark-vim
-    #   pkgs.vimPlugins.lightline-vim
-    #   pkgs.vimPlugins.vim-nix
-    #   pkgs.vimPlugins.fzf-vim
-    # ];
     plugins = with pkgs.vimPlugins; [
       onedark-vim
       lightline-vim
       vim-nix
       fzf-vim
 
+      # vim-horizon
       vim-horizon
 
       # Telescope
@@ -52,6 +48,8 @@ in
       let mapleader=" "
       nnoremap <silent> <Leader>b :Buffers<CR>
       nnoremap <silent> <C-f> :Telescope find_files<CR>
+
+      let g:lightline = {'colorscheme' : 'horizon'}
     '';
     extraPackages = [
       pkgs.nixfmt 

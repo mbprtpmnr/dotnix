@@ -40,9 +40,9 @@ in
       plugins = [ "git" ];
     };
 
-    # initExtra = ''
-    #   ${builtins.readFile ./nix-completions.sh}
-    # '';
+    initExtra = ''
+      ${builtins.readFile ./nix-completions.sh}
+    '';
 
     initExtraBeforeCompInit = ''
       source ${pkgs.zsh-powerlevel10k}/share/zsh-powerlevel10k/powerlevel10k.zsh-theme
