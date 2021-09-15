@@ -18,4 +18,7 @@ NixOS   |NixOS :)
 
 These are the people whom I've taken inspiration from while writing these configs. I am thankful to all of them.
 
-- [fufexan](https://github.com/fufexan/dotfiles)
+- [fufexan](https://github.com/fufexan)
+- [NobbZ](https://github.com/NobbZ)
+- [MagicRB](https://github.com/MagicRB)
+- [notusknot](https://github.com/notusknot)
