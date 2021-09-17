@@ -18,6 +18,7 @@
     pavucontrol
     xfce.thunar-archive-plugin
     xfce.xfce4-pulseaudio-plugin
+    stable.nixops
     keepassxc
     kora-icon-theme
     nixpkgs-fmt

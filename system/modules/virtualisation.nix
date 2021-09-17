@@ -5,5 +5,9 @@
     enable = true;
     enableOnBoot = true;
     storageDriver = "overlay2";
+    autoPrune = {
+      enable = true;
+      dates = "daily";
+    };
   };
 }

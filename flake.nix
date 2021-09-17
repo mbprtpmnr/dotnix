@@ -86,8 +86,9 @@
       # Home-Manager users configurations
       homeConfigurations = let
         username = "mbprtpmnr";
-        homeDirectory = "/home/mbprtpmnr";
+        homeDirectory = "/home/${username}";
         system = "x86_64-linux";
+        pkgs = self.pkgs.${system}.nixpkgs;
         stateVersion = "21.11";
         extraSpecialArgs = { inherit inputs self; };
         generateHome = inputs.home-manager.lib.homeManagerConfiguration;
@@ -96,8 +97,7 @@
         };
       in {
         "mbprtpmnr@nixos" = generateHome {
-          inherit system username homeDirectory stateVersion extraSpecialArgs;
-          pkgs = self.pkgs.x86_64-linux.nixpkgs;
+          inherit system homeDirectory username stateVersion pkgs extraSpecialArgs;
           configuration = {
             imports = [ ./home/home.nix ];
             inherit nixpkgs;
