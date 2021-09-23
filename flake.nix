@@ -107,6 +107,9 @@
   
       # System build
       nixos = inputs.self.nixosConfigurations.nixos.config.system.build.toplevel;
+
+      # Hydra checks
+      checks.x86_46-linux.nixos = inputs.self.nixosConfigurations.nixos.config.system.build.toplevel;
       
       # Overlays
       sharedOverlays = [
