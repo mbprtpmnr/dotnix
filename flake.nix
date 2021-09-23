@@ -110,6 +110,10 @@
 
       # Hydra checks
       checks.x86_46-linux.nixos = inputs.self.nixosConfigurations.nixos.config.system.build.toplevel;
+
+      # Hydra jobset
+      hydraJob.nixos.x86_64-linux = inputs.self.nixosConfigurations.nixos.config.system.build.toplevel;
+ 
       
       # Overlays
       sharedOverlays = [
